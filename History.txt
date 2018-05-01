@@ -1,0 +1,43 @@
+Software		Extended Exec
+Current Version		1.0
+Platforms		TI89 / TI89TI / TI-92+ / V200
+Author			Martial Demolins (Folco)
+Site (log)		http://www.yaronet.com/blogs/blog.php?id=400
+Email			mdemolins(at)gmail.com
+
+
+03-08-2009
+----------
+- finale release
+- renamed "norun" option do "dry"
+- removed a lot of internal hacks
+- removed the loader. File is now <900 bytes large !
+- add an external man file
+
+
+19-07-2009
+----------
+- first beta release
+- added support of STR files as input
+- removed -h switch : 'eexec' without any argument now displays a short help
+- reduced a lot the size : 129 bytes for the loader, <1ko for the main part
+- updated the pack archive to the standard, now it contains files : author, version,
+  comment and icon
+- increased reliability by using the ER_catch/ER_success romcalls
+- EExec now supports adding/archiving/removing binary files when using a source
+  file as input (STR or TEXT)
+- updated sources to be more GPL-compliant
+- add a tpr file and a .bat file to build easily the pack under MS-Windows
+- verbose mode support removed (useless)
+- kept only critical error messages
+- renamed the soft
+
+
+13-05-2009
+----------
+- first alpha release
+
+
+08-05-2009
+----------
+- beginning

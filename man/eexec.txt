@@ -1,0 +1,39 @@
+<meta></meta>
+<b>NAME</b>
+	eexec - Extended Exec
+
+<b>SYNOPSIS</b>
+	eexec <options> -arg <hexadecimal value>
+	eexec <options> -src <[folder\]filename>
+
+<b>DESCRIPTION</b>
+	This soft is designed to offer a way to execute hexadecimal code like the "exec()" command of AMS, but it has options which improve it.
+
+<b>OPTIONS</b>
+	<b>-add</b> <[folder\]filename>
+		add the file to the vat. The filename can contain a path. By default, eexec executes the code from RAM without adding it to the VAT.
+
+	<b>-arc</b>	archive the file before running it.
+
+	<b>-rem</b>	remove the file after having run it.
+
+	<b>-arg</b> <hexadecimal value>
+		built the hexa value to do a binary executable
+
+	<b>-src</b> <[folder\]filename>
+		use the specified file to get the hex value. It must be a text or a string file.
+		A text file musn't have trailing spaces or EOL to be valid.
+
+	<b>-dry</b>	don't run the built program. It will be added to the VAT if specified.
+		It will do nothing if the file isn't added, but you will be sure that your hex value is valid if no error occurs.
+
+	If both -arg and -src are specified, -src is ignored.
+	If -arc or -rem are specified without -add, they are ignored.
+
+<b>REQUIREMENT</b>
+	PedroM 0.82 RC7 minimum is required. Don't use EExec with AMS, it will crash
+
+<b>NOTES</b>
+	If you run this program <l>archived</l=arc>, it won't consume any byte of RAM!
+	This program can be run in multiple instances.
+	Bug reports and suggestions : mdemolins@gmail.com
